@@ -1,0 +1,44 @@
+.tabs__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--gray-color);
+  padding-bottom: 15px;
+  margin-bottom: 24px;
+}
+
+.tabs__item {
+  margin: 0;
+  padding: 0;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.tabs__button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  font: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--gray-color);
+
+  &--active {
+    color: var(--main-orange-color);
+  }
+}
+
+.tabs__reviews {
+  min-width: 268px;
+  min-height: 431px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  padding: 50px 26px 0;
+}

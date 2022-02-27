@@ -1,9 +1,16 @@
 :root {
-  --dark-color-color: #141517;
+  --dark-color: #141517;
   --light-dark-color: #2c2e3f;
   --main-orange-color: #fe7865;
+  --opacity-orange-color: rgba(254, 120, 101, 0.5);
   --hover-orange-color: #f17d4b;
   --white-color: #ffffff;
+  --white-dark-color: #fbf8f8;
+  --gray-color: rgba(44, 46, 63, 0.3);
+  --light-gray-color: rgba(20, 21, 23, 0.5);
+  --border-gray-color: #d7d9df;
+  --dark-gray-color: rgba(44, 46, 63, 0.7);
+  --bg-blue-color: #6799bb;
 }
 
 $mobile-only: 767px;

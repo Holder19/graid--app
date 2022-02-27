@@ -1,0 +1,36 @@
+.page {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0;
+}
+
+.page__leveler {
+  margin: 0 16px 0 16px;
+}
+
+.page__header {
+  margin: 18px 0 15px 0;
+}
+
+.page__prices {
+  margin-bottom: 50px;
+}
+
+.page__feedback {
+  margin-bottom: 60px;
+  background-color: var(--white-dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,12 @@
+.form__contacts {
+  padding: 16px 26px;
+  width: 100%;
+  border: 1px solid var(--dark-gray-color);
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--dakr-color);
+  }
+}

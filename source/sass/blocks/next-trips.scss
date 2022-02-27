@@ -1,0 +1,40 @@
+.next-trips__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.next-trips__list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 25px;
+  border-bottom: 1px solid var(--border-gray-color);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.next-trips__list {
+  margin: 0;
+  padding: 0;
+
+  &:last-child {
+    margin: 0 auto;
+  }
+}
+
+.next-trips__item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--light-gray-color);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

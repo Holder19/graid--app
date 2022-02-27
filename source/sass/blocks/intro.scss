@@ -1,0 +1,35 @@
+.intro__img-wrapper {
+  height: 235px;
+  width: 320px;
+}
+
+.intro__img {
+  width: 320px;
+  height: 235px;
+  position: relative;
+  z-index: 1;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  margin: 0 auto;
+  display: flex;
+  align-self: center;
+  text-align: center;
+  max-width: 300px;
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.intro__text {
+  margin: 0;
+  padding: 0;
+  color:var(--light-dark-color);
+  margin: 20px 0;
+}
