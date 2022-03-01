@@ -8,6 +8,11 @@
   border-bottom: 1px solid var(--gray-color);
   padding-bottom: 15px;
   margin-bottom: 24px;
+  gap: 10px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .tabs__item {
@@ -29,6 +34,7 @@
   font-size: 20px;
   line-height: 24px;
   color: var(--gray-color);
+  cursor: pointer;
 
   &--active {
     color: var(--main-orange-color);
@@ -41,4 +47,21 @@
   margin: 0 auto;
   margin-bottom: 45px;
   padding: 50px 26px 0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.tabs__description {
+  padding: 0 16px;
+}
+
+.tabs__description-wrapper--hide {
+  display: none;
+}
+
+.tabs__description-wrapper--active {
+  display: block;
 }

@@ -6,14 +6,26 @@
   font-size: 24px;
   line-height: 150%;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+  }
 }
 
 .places__text {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 15px;
   margin-bottom: 20px;
+  color: var(--dark-gray-color);
+  font-size: 16px;
+  line-height: 28px;
+
+  @media (min-width: $tablet) {
+    max-width: 343px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
 }
 
 .places__list {
@@ -23,6 +35,16 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    min-width: 616px;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 95px;
+  }
 }
 
 .places__item {
@@ -30,6 +52,10 @@
   padding: 0;
   list-style: none;
   position: relative;
+
+  &:last-child {
+    margin: 0 auto;
+  }
 }
 
 .places__img {

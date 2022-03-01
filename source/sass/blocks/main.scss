@@ -1,4 +1,14 @@
 .main__intro {
   position: relative;
   margin-bottom: 80px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 160px;
+  }
+}
+
+.main__places {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }

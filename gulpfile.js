@@ -12,6 +12,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import svgSprite from 'gulp-svg-sprite';
 
 // Styles
 
@@ -69,19 +70,17 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-    .pipe(svgo())
-    .pipe(gulp.dest('build/img'));
-
 const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+  return gulp.src("source/icons/*.svg")
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "../sprite.svg"
+        }
+      },
+    }
+    ))
+    .pipe(gulp.dest("build/icons"));
 }
 
 // Copy
@@ -131,6 +130,7 @@ const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch("source/icons/**/*.svg", gulp.series(sprite, reload));
 }
 
 // Build
@@ -143,7 +143,6 @@ export const build = gulp.series(
     styles,
     html,
     scripts,
-    svg,
     sprite,
     createWebp
   ),
@@ -160,7 +159,6 @@ export default gulp.series(
     styles,
     html,
     scripts,
-    svg,
     sprite,
     createWebp
   ),

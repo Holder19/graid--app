@@ -3,6 +3,49 @@
   background-image: url("../../img/background/reviews-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution : 2dppx) {
+    background-image: url("../../img/tabs-greece-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url("../../img/tabs-greece-tablet@1x.jpg");
+    height: 415px;
+  }
+
+}
+
+.reviews--albania {
+  background-image: url("../../img/tabs-albania-mobile@1x.jpg");
+
+  @media (min-resolution : 2dppx) {
+    background-image: url("../../img/tabs-albania-mobile@2x.jpg");
+  }
+
+}
+
+.reviews--macedonia {
+  background-image: url("../../img/tabs-macedonia-mobile@1x.jpg");
+
+  @media (min-resolution : 2dppx) {
+    background-image: url("../../img/tabs-macedonia-mobile@2x.jpg");
+  }
+}
+
+.reviews--montenegro {
+  background-image: url("../../img/tabs-montenegro-mobile@1x.jpg");
+
+  @media (min-resolution : 2dppx) {
+    background-image: url("../../img/tabs-montenegro-mobile@2x.jpg");
+  }
+}
+
+.reviews--croatia {
+  background-image: url("../../img/tabs-сroatia-mobile@1x.jpg");
+
+  @media (min-resolution : 2dppx) {
+    background-image: url("../../img/tabs-сroatia-mobile@2x.jpg");
+  }
 }
 
 .reviews__title {
@@ -17,6 +60,14 @@
   margin: 0 auto;
   padding-bottom: 10px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .reviews__text {
@@ -27,15 +78,36 @@
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
 }
 
 .reviews__author {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+
+  }
 }
 
 .reviews__wrapper {
   background-color: var(--white-color);
   padding: 30px 20px 34px;
+
+  @media (min-width: $tablet) {
+    padding: 30px;
+    padding-bottom: 5px;
+    width: 382px;
+    margin: 0 auto;
+
+  }
 }

@@ -2,4 +2,26 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: var(--white-dark-color);
+  padding: 16px 16px;
+}
+
+.nav-list__link {
+  color: var(--special-font-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    mask-image: url("../icons/sprite.svg#arrow-right");
+    background-color: var(--light-gray-color);
+    mask-size: 17px;
+    mask-repeat: no-repeat;
+  }
 }

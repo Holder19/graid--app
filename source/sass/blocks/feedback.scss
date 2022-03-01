@@ -14,3 +14,24 @@
   line-height: 150%;
   text-align: center;
 }
+
+.feedback__form__wrapper {
+  @media (min-width: $tablet) {
+    background-color: var(--white-color);
+    padding: 50px;
+    min-width: 658px;
+  }
+}
+
+.feedback__form {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    p {
+      width: 269px;
+    }
+  }
+}

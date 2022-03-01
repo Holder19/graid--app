@@ -5,6 +5,10 @@
   border-bottom: 1px solid var(--border-gray-color);
   padding-bottom: 30px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-contacts__title {
@@ -18,6 +22,16 @@
 
 .footer-contacts__link {
   color: var(--main-orange-color);
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background-color: var(--icon-gray-color);
+  }
 }
 
 .footer-contacts__link--mail {
@@ -25,6 +39,12 @@
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 21px;
+
+  &::before {
+    mask: url("../icons/sprite.svg#mail") no-repeat center;
+    mask-size: 30px;
+
+  }
 }
 
 .footer-contacts__link--phone {
@@ -32,8 +52,17 @@
   font-size: 16px;
   line-height: 32px;
   text-decoration: underline;
+
+  &::before {
+    mask: url("../icons/sprite.svg#phone") no-repeat center;
+    mask-size: 40px;
+  }
 }
 
 .footer__corporate {
   padding: 30px 0 26px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 54px;
+  }
 }

@@ -17,6 +17,11 @@
   border-bottom: 1px solid var(--border-gray-color);
   padding-bottom: 30px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    gap: 30px;
+  }
 }
 
 .next-trips__list {
@@ -37,4 +42,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
 }

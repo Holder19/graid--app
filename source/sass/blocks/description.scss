@@ -7,6 +7,10 @@
   text-align: center;
   margin-bottom: 20px;
   color: var(--light-dark-color);
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+  }
 }
 
 .description__text {
@@ -14,8 +18,15 @@
   padding: 0;
   margin-bottom: 20px;
   text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--dark-gray-color);
 }
 
 .description__button {
   margin-bottom: 50px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }

@@ -1,35 +1,57 @@
-.intro__img-wrapper {
-  height: 235px;
-  width: 320px;
-}
-
 .intro__img {
-  width: 320px;
+  width: 100%;
   height: 235px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  z-index: -1;
+
+  @media (min-width: $tablet) {
+    height: 344px;
+  }
 }
 
 .intro__title {
   margin: 0;
   padding: 0;
-  z-index: 1;
-  position: absolute;
-  top: 20%;
   margin: 0 auto;
-  display: flex;
-  align-self: center;
   text-align: center;
   max-width: 300px;
   color: var(--white-color);
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
+  padding-top: 81px;
+
+  @media (min-width: $tablet) {
+    max-width: 400px;
+    font-size: 30px;
+    padding-top: 60px;
+  }
 }
 
 .intro__text {
   margin: 0;
   padding: 0;
   color:var(--light-dark-color);
-  margin: 20px 0;
+  margin: 0 0 20px;
+  padding-top: 102px;
+
+
+  @media (min-width: $tablet) {
+    color: var(--white-color);
+    padding-top: 15px;
+    text-align: center;
+    max-width: 398px;
+    margin-left: 109px;
+    margin-bottom: 15px;
+
+  }
+}
+
+.intro__button-icon {
+  width: 14px;
+  height: 14px;
+  mask: url("../icons/sprite.svg#arrow-down") no-repeat center;
+  mask-size: 23px;
+  background-color: var(--white-color);
+  margin-left: 112px;
 }
